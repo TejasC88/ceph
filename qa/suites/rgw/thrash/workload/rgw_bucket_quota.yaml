@@ -6,7 +6,7 @@ tasks:
       - cpan install Amazon::S3
 - exec:
     client.0:
-      - cp /root/perl5/lib/perl5/Amazon /usr/local/share/perl5
+      - cp -R /root/perl5/lib/perl5/Amazon /usr/local/share/perl5
 - workunit:
     clients:
       client.0:
